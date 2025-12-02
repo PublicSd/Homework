@@ -1,0 +1,68 @@
+body {
+  font-family: sans-serif;
+  color: white;
+  font-size: 20px;
+  background-color: rgba(7, 7, 7, 0.751);
+}
+
+form {
+  border: 1px solid black;
+  border-radius: 5px;
+  max-width: 500px;
+  background-color: rgba(0, 0, 0, 0.249);
+  margin: 10% 30% 8%;
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  display: block;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 0 0 5px 0;
+  width: 350px;
+  height: 30px;
+  color: white;
+  background-color: rgb(71, 70, 70);
+}
+
+.header {
+  margin: 0 0 5px 0;
+}
+
+textarea {
+  display: block;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 350px;
+  height: 70px;
+  max-width: 350px;
+  min-width: 350px;
+  max-height: 85px;
+  min-height: 40px;
+  background-color: rgb(71, 70, 70);
+  color: white;
+}
+
+.checkbox {
+  width: 10px;
+  height: 10px;
+  margin: 15px 0 0 0;
+  display: inline;
+}
+
+p {
+  display: inline;
+  font-size: 13px;
+}
+
+.button-submit {
+  display: block;
+  border: 1px solid black;
+  border-radius: 7px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
