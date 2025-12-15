@@ -1,0 +1,117 @@
+html {
+  font-family: sans-serif;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.842);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form {
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 6px;
+  background-color: rgb(74, 74, 74);
+}
+
+fieldset {
+  border: none;
+  padding: 0px;
+}
+
+.header {
+  margin-top: 0px;
+}
+
+.label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.input,
+.input-message {
+  display: block;
+  border: 2px solid black;
+  padding: 5px 12px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  outline: none;
+}
+
+.input-message {
+  max-height: 150px;
+  min-height: 30px;
+  resize: vertical;
+}
+
+.label-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label {
+  padding-left: 22px;
+}
+
+.input-checkbox {
+  position: absolute;
+  appearance: none;
+  outline: none;
+}
+
+.input-checkbox::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin-left: -22px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-checkbox:checked::after {
+  background: url(../images/check-icon.svg) no-repeat center, rgb(111, 0, 237);
+}
+
+.checkbox-text {
+  font-size: 14px;
+}
+
+.button-submit {
+  border: none;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 18px;
+  background-color: rgb(111, 0, 237);
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.button-submit:hover {
+  opacity: 0.75;
+  transform: scale(1.02);
+}
+
+.button-submit:active {
+  background-color: rgb(93, 7, 191);
+}
+
+.input:focus-visible,
+.input-message:focus-visible,
+.button-submit:focus-visible,
+.input-checkbox:focus-visible::after {
+  outline: 2px solid rgb(111, 0, 237);
+  outline-offset: 1px;
+}
